@@ -1,15 +1,15 @@
-const beginning = ['I', 'You', 'Us'];
-const middle = ['like', 'love', 'hate'];
-const end = ['pineapples', 'coding', 'Bob'];
+const beginning = ['I', 'You', 'We'];
+const middle = ['like', 'love', 'hate', 'adore', 'kick', 'slap'];
+const end = ['pineapples', 'coding', 'Bob', 'cauliflower', 'Jim', 'Mickey Mouse', 'rollercoasters'];
 
 const mixedMessage = () => {
   finalArray = [];
-  let i = Math.floor(Math.random() * 3);
-  let j = Math.floor(Math.random() * 3);
-  let p = Math.floor(Math.random() * 3);
-  finalArray.push(beginning[i]);
-  finalArray.push(middle[j]);
-  finalArray.push(end[p]);
+  let beginningRandom = Math.floor(Math.random() * beginning.length);
+  let middleRandom = Math.floor(Math.random() * middle.length);
+  let endRandom = Math.floor(Math.random() * end.length);
+  finalArray.push(beginning[beginningRandom]);
+  finalArray.push(middle[middleRandom]);
+  finalArray.push(end[endRandom]);
   return finalArray.join(' ');
 };
 
